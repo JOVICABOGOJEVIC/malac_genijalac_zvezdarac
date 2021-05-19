@@ -8,6 +8,6 @@ app.set("view engine","ejs")
 
 app.use('/',routes)
 
-app.listen(3000, (req,res) =>{
+app.listen(80, (req,res) =>{
     console.log('Listening on port 3000');
 })
