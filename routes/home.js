@@ -20,4 +20,7 @@ router.get('/priprema', (req,res) =>{
 router.get('/upis', (req,res) =>{
     res.render("home/upis");
 });
+router.get('/igrica', (req,res) =>{
+    res.render("home/igrica");
+});
 module.exports = router;

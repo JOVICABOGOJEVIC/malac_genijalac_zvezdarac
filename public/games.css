@@ -1,0 +1,62 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+button{
+    padding: 1%;
+}
+.slider{
+    width: 400px;
+    height: 200px;
+    margin: 50px auto;
+    box-shadow: 0 0 8px;
+}
+.slider > img{
+    width: 400px;
+    height: 200px;
+    filter : blur(var(--blur));
+}
+.row{
+ padding: 1px; 
+
+}
+:root {
+    --blur:20px;
+}
+.dugmad{
+    text-align: center;
+    margin-top: 1%;
+}
+.tekst{
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin: 50px auto;
+    box-shadow: 0 0 8px;
+}
+.result{
+    display:none;
+    color:black
+}
+.result{
+    display:none;
+    color:black
+}
+th{
+    padding:1%;
+}
+td{
+    text-align: center;
+}
+.sigma{
+    border:2px solid tomato;
+    background-color: tomato;
+    color:white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.comment{
+    color:black;
+}
