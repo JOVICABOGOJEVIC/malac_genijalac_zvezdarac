@@ -4,6 +4,10 @@ var btn2 = document.querySelector('.btn2');
 var btn3 = document.querySelector('.btn3');
 var btn4 = document.querySelector('.btn4');
 var btn5 = document.querySelector('.btn5');
+var btnStart1 = document.querySelector('.btnStart1');
+var igra = document.querySelector('.igra');
+var first = document.querySelector('.first');
+var second = document.querySelector('.second');
 var input1 = document.querySelector('.input1');
 var input2 = document.querySelector('.input2');
 var input3 = document.querySelector('.input3');
@@ -18,7 +22,7 @@ var sigma = document.querySelector('.sigma');
 var ocena = document.querySelector('#ocena')
 var zbir = document.querySelector("#zbir")
 
- var sum = [];
+var sum = [];
 
 //TEST1
 function test1() {
@@ -26,12 +30,12 @@ function test1() {
     var str = point20;
     var arr = str.match(/\S+/g);
     sum.push(arr.length);
-   
-    
-        //1 
+
+
+    //1 
     if (point20.includes("KONJ") || point20.includes("КОЊ")) {
         var count1a = 20;
-        
+
     } else {
         var count1a = 0;
     }
@@ -101,15 +105,15 @@ function test1() {
     } else {
         var count12a = 0;
     }
-    var pokusaj = sum.reduce(function(acc, val) { return acc + val; }, 0);
+    var pokusaj = sum.reduce(function (acc, val) { return acc + val; }, 0);
 
     zbir.innerHTML = pokusaj;
 
-    var saldo1 = count1a+count2a+count3a+count4a+count5a+count6a+count7a+
-    count8a+count9a+count10a+count11a+count12a;
- 
+    var saldo1 = count1a + count2a + count3a + count4a + count5a + count6a + count7a +
+        count8a + count9a + count10a + count11a + count12a;
+
     saldo.push(saldo1)
-   }  
+}
 //TEST2
 function test2() {
     point15 = input2.value.toUpperCase();
@@ -188,11 +192,11 @@ function test2() {
     } else {
         var count12b = 0;
     }
-    var pokusaj = sum.reduce(function(acc, val) { return acc + val; }, 0);
+    var pokusaj = sum.reduce(function (acc, val) { return acc + val; }, 0);
 
     zbir.innerHTML = pokusaj;
-   var saldo2 = count1b+count2b+count3b+count4b+count5b+count6b+count7b+
-    count8b+count9b+count10b+count11b+count12b;
+    var saldo2 = count1b + count2b + count3b + count4b + count5b + count6b + count7b +
+        count8b + count9b + count10b + count11b + count12b;
     saldo.push(saldo2)
 
 }
@@ -274,11 +278,11 @@ function test3() {
     } else {
         var count12c = 0;
     }
-    var pokusaj = sum.reduce(function(acc, val) { return acc + val; }, 0);
+    var pokusaj = sum.reduce(function (acc, val) { return acc + val; }, 0);
 
     zbir.innerHTML = pokusaj;
-    var saldo3 = count1c+count2c+count3c+count4c+count5c+count6c+count7c+
-    count8c+count9c+count10c+count11c+count12c;
+    var saldo3 = count1c + count2c + count3c + count4c + count5c + count6c + count7c +
+        count8c + count9c + count10c + count11c + count12c;
     saldo.push(saldo3)
 }
 //TEST4
@@ -359,11 +363,11 @@ function test4() {
     } else {
         var count12d = 0;
     }
-    var pokusaj = sum.reduce(function(acc, val) { return acc + val; }, 0);
+    var pokusaj = sum.reduce(function (acc, val) { return acc + val; }, 0);
 
     zbir.innerHTML = pokusaj;
-    var saldo4 = count1d+count2d+count3d+count4d+count5d+count6d+count7d+
-    count8d+count9d+count10d+count11d+count12d;
+    var saldo4 = count1d + count2d + count3d + count4d + count5d + count6d + count7d +
+        count8d + count9d + count10d + count11d + count12d;
     saldo.push(saldo4)
 
 }
@@ -373,15 +377,77 @@ function test5() {
     var str = point2;
     var arr = str.match(/\S+/g);
     sum.push(arr.length);
-    var niz = sum.reduce(function(acc, val) { return acc + val; }, 0)
-    var pokusaj = sum.reduce(function(acc, val) { return acc + val; }, 0);
+    var niz = sum.reduce(function (acc, val) { return acc + val; }, 0)
+    var pokusaj = sum.reduce(function (acc, val) { return acc + val; }, 0);
     console.log(niz);
-    if (niz>12) {
-        zbir.innerHTML ="Унет је већи број појмова од 12";
+    if (niz > 12) {
+        zbir.innerHTML = "Унет је већи број појмова од 12";
         console.log("Radi");
-        }else{
-            zbir.innerHTML = pokusaj
-        }
+    } else {
+        zbir.innerHTML = pokusaj
+    }
+
+}
+var saldo = [];
+if (saldo.length === 3) {
+    btn1.disabled = true;
+    btn3.disabled = true;
+    btn4.disabled = true;
+    btn5.disabled = true;
+    btn2.disabled = true;
+}
+
+
+btn1.addEventListener('click', start1)
+btn1.addEventListener('click', disable)
+btn2.addEventListener('click', level1)
+btn2.addEventListener('click', testA)
+btn3.addEventListener('click', level2)
+btn3.addEventListener('click', testB)
+btn4.addEventListener('click', level3)
+btn4.addEventListener('click', testC)
+btn5.addEventListener('click', level4)
+btn5.addEventListener('click', testD)
+btn6.addEventListener('click', testE)
+
+function testA(){
+    if(input1.value.length == 0){
+        console.log("Prazan input");
+    }else{
+        test1()
+    }
+};
+function testB(){
+    if(input2.value.length == 0){
+        console.log("Prazan input");
+    }else{
+        test2()
+    }
+};
+function testC(){
+    if(input3.value.length == 0){
+        console.log("Prazan input");
+    }else{
+        test3()
+    }
+};
+function testD(){
+    if(input4.value.length == 0){
+        console.log("Prazan input");
+    }else{
+        test4()
+    }
+};
+function testE(){
+    if(input5.value.length == 0){
+        test6();
+    }else{
+        test5();
+        test6();
+    }
+};
+function test6(){
+    point2 = input5.value.toUpperCase();
 
     comment.style.display = "none";
     naslov.style.display = "none";
@@ -459,45 +525,14 @@ function test5() {
     } else {
         var count12e = 0;
     }
-  
-    var saldo5  = count1e+count2e+count3e+count4e+count5e+count6e+count7e+
-    count8e+count9e+count10e+count11e+count12e;
+
+    var saldo5 = count1e + count2e + count3e + count4e + count5e + count6e + count7e +
+        count8e + count9e + count10e + count11e + count12e;
     saldo.push(saldo5)
-    var ukupno = saldo.reduce(function(acc, val) { return acc + val; }, 0)
- 
-    if (niz<13) {
-    rezultat.innerHTML = ukupno;
-       
-        }else{
-    rezultat.innerHTML ="<h6> ПОКУШАЈТЕ ПОНОВО</h6>";
-        
-        }
-
-   
+    var ukupno = saldo.reduce(function (acc, val) { return acc + val; }, 0)
+    
+        rezultat.innerHTML = ukupno;
 }
-var saldo = [];
-if(saldo.length === 3 ){
-    btn1.disabled = true;
-    btn3.disabled = true;
-    btn4.disabled = true;
-    btn5.disabled = true;
-    btn2.disabled = true;
-}
-
-
-btn1.addEventListener('click', start1)
-btn1.addEventListener('click', disable)
-btn2.addEventListener('click', level1)
-btn2.addEventListener('click', test1)
-btn3.addEventListener('click', level2)
-btn3.addEventListener('click', test2)
-btn4.addEventListener('click', level3)
-btn4.addEventListener('click', test3)
-btn5.addEventListener('click', level4)
-btn5.addEventListener('click', test4)
-btn6.addEventListener('click', test5)
-
-var counter = 1;
 
 function disable() {
     btn1.disabled = true;
@@ -507,10 +542,13 @@ function disable() {
     btn6.disabled = true;
     input1.focus();
 }
+var counter = 1;
+
 function start1() {
-    setInterval(function () {
-     counter++;
+    setInterval(function() {
+        counter++;
         (counter === 13) ? counter = 1 : counter = counter;
+
         img.setAttribute('src', 'images/bg' + counter + '.jpg');
     }, 1000)
 }
