@@ -171,6 +171,7 @@ height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    width:100%;
   }
   
   /* Place text in the middle of the image */
@@ -181,6 +182,64 @@ height: auto;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:33%;
+  }
+  .hikari{
+    background: red;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+  }
+  .aritmetika{
+    background:#3366cc;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+  }
+  .definicija{
+    background:rgb(250, 226, 226);
+    padding: 2%;
+    margin-top: 1%;
+    font-weight: bold;
+  }
+  .nastava{
+    background:#88B04B;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+  }
+  
+  .follow{
+    background:orange;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    font-weight: bold;
+    width: 100%;
+    
+  }
+  .box2{
+    background-color: rgb(217, 245, 243);
+
+  }
+  p{
+    font-size: 1.1em;
   }
   .font {
     position: absolute;

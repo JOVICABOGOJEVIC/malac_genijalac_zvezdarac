@@ -23,4 +23,7 @@ router.get('/upis', (req,res) =>{
 router.get('/igrica', (req,res) =>{
     res.render("home/igrica");
 });
+router.get('/mentalna_aritmetika', (req,res) =>{
+    res.render("home/mentalna_aritmetika");
+});
 module.exports = router;
