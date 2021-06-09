@@ -26,4 +26,7 @@ router.get('/igrica', (req,res) =>{
 router.get('/mentalna_aritmetika', (req,res) =>{
     res.render("home/mentalna_aritmetika");
 });
+
+router.use('/',require('./games'))
+
 module.exports = router;

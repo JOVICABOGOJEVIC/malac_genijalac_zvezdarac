@@ -1,99 +1,44 @@
 <%- include ('../partials/top') %>
 
-    <h4 class="text-center p-1 border text-danger">ПРЕПОЗНАЈ ЖИВОТИЊУ НА СЛИЦИ?</h4>
- 
 <div class="container-fluid">
+    <h3 style="color:black; color:#3366cc; text-align: center;" class="p-3">IGRICE ZA BUDUĆE GENIJALCE</h3>
     <div class="row">
-        <div class="col-md-6">
-            <div class="tekst">
-                <h4 class="text-center text-danger naslov">ПРАВИЛА ИГРЕ :</h4>
-                <p class="p-1 comment">
-                    Притиском на дугме "20 поена" на панелу ће се редом приказивати 12 животиња са
-                    слабом резолуцијом слике.
-                    Свако наредно дугме приказује јаснију слику, са могућношћу остваривањa мањег броја бодова.
-                    Уколико сте сигурни да не можете да препознате појам, тек тада пређите на следеће плаво дугме
-                    ..
-                    Време је неограничено.. <br> СРЕЋНО!! <p class="text-info" >Број покушаја:</p>
-                    <h4 id="zbir" class="text-danger text-center border">0</h4>
-                </p>
-                
-                <div class="result">
-              <h4 class="text-center">ОД МАКСИМАЛНИХ <b>240</b> БОДОВА ОСВОЈИЛИ СТЕ:</h4>
-                      <div class="sigma" id="rezultat">
-                    </div>
-                    <h5 class="text-center">УСКОРО ЈОШ ЗАНИМЉИВИХ ИГАРА, НОВИХ ЖИВОТИЊА И ЗАБАВНОГ САДРЖАЈА <br> <br>
-                        <a class="text-center text-info display-5" href="/">ВАШ МАЛАЦ ГЕНИЈАЛАЦ ЗВЕЗДАРАЦ</a><br> <br>
-                        <a  class="text-center text-danger border" target="_blank"
-                         href="https://jovicabogojevic.github.io/BlicQuiz/">НАШ КВИЗ ОПШТЕГ ЗНАЊА</a>
-                    </h5>
-                    <br>
-                   
-
-              </div>
-                    
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">IGRICA #1</div>
+            <div class="card-body">
+                <img src="images/bg2.jpg" style="filter:blur(20px)" alt="">
             </div>
-            </div>
-        
-        
-        <div class="col-md-6">
-            <div class="slider">
-                <img src="images/bg1.jpg" alt="">
+            <div class="card-footer">
+                Iza mutiranih sličica nalaze se skrivene životinje, u svakom narednom krugu slike su jasnije, 
+                ali je moguć manji broj ostvarenih poena.
+                <a href="game1" class="form-control text-center bg-dark text-info"> START </a>
             </div>
         </div>
-
     </div>
-
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2">
-            <button class="btn btn-info btn1" style="width: 100%; text-transform: uppercase">20 poena</button>
-        </div>
-        <div class="col-md-10">
-            <input type="text" value="" name="input1" placeholder="x 20 поена"
-            class="form-control input1">
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-md-2">
-            <button class="btn btn-info btn2" style="width: 100%;">15 poena</button>
-        </div>
-        <div class="col-md-10">
-            <input type="text" value="" name="input1" placeholder="x 15 поена" class="form-control input2">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">IGRICA #2</div>
+            <div class="card-body">
+                <img src="images/malacgenijalac.jpg"  alt="">
+            </div>
+            <div class="card-footer">
+                Kviz opšteg znanja, za naše Malce Genijalce. Svako pitanje nosi po 10 poena, dok je maksimalan broj
+                ostvarenih poena 240.
+                <a href="https://jovicabogojevic.github.io/BlicQuiz/" target="_blank" class="form-control text-center bg-dark text-info"> START </a>
+            </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-2">
-            <button class="btn btn-info btn3" style="width: 100%;">10 poena</button>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">IGRICA #3</div>
+            <div class="card-body text-warning">U PRIPREMI</div>
+            <div class="card-footer">Uskoro još zanimljivih igrica i puno pametne zabave.. <br>
+            Vaš MALAC GENIJALAC 
+            <button class="form-control bg-dark text-info"> ZAPRATITE NAS NA FACEBOOK-U </button>
         </div>
-        <div class="col-md-10">
-            <input type="text" value="" name="input1" placeholder="x 10 поена" class="form-control input3">
-        </div>
-    </div> 
-    <div class="row">
-        <div class="col-md-2">
-            <button class="btn btn-info btn4" style="width: 100%;">5 poena</button>
-        </div>
-        <div class="col-md-10">
-            <input type="text" value="" name="input1" placeholder="x 5 поена" class="form-control input4">
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-2">
-            <button class="btn btn-info btn5" style="width: 100%;">2 poena</button>
-        </div>
-        <div class="col-md-10">
-            <input type="text" value="" name="input1" placeholder="x 2 поена" class="form-control input5">
-        </div>
-    </div>
-    <button class="btn form-control btn-danger submit m-2">ПОТВРДИ</button>
 </div>
-</div>
-<div class="follow">
-    <h1>UPIS JE U TOKU !!</h1>
-    <a target="_blank" href="https://www.facebook.com/profile.php?id=100068634936845"
-    class="text-primary">ZAPRATITE NAŠU FACEBOOK STRANICU</a>
 </div>
 <%- include ('../partials/footer') %>

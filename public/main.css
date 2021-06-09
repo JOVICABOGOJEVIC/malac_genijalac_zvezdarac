@@ -224,7 +224,7 @@ height: auto;
   }
   
   .follow{
-    background:orange;
+    background: #2A4B7C;
     text-align: center;
     font-size: 25px;
     color: white;
@@ -256,4 +256,15 @@ height: auto;
     transform: scale(1.1);
     background-color: #88B04B ;
   }
-  
+  .card-header{
+    margin-top: 5%;
+    background: #3366cc;
+    color: white;
+    text-align: center;
+  }
+  .card-body{
+
+  }
+  .card-footer{
+    color: darkblue;
+  }
