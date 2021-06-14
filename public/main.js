@@ -19,5 +19,5 @@ anime.timeline({ loop: true })
         duration: 1100,
         delay: (el, i) => 10000 + 30 * i
     });
-    // kontakt forma counter
- 
+    // Facebook split
+
