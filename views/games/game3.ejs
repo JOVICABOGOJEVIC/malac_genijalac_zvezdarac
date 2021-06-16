@@ -71,23 +71,19 @@
     <h3 class="text-center border border-info p-2">ПОГОДИТЕ СКРИВЕНИ ПОЈАМ</h3>
 
     <p class="text-center">
-        Иза 24 поља се налази скривени појам, свако откривено поље умањује салдо поена за 3,
-        тако да можете остварити и негативне бодове. <br>
-        Када сте у потпуности сигурни притисните дугме "ПОТВРДИ"
-        Максимални број поена је 24.
+        Иза 24 поља се налази 10 скривених појмова, свако откривено поље умањује салдо поена за 3,<br>
+        тако да можете остварити и негативне бодове. Уколико унесете погрешан појам
+        и потврдите одузеће Вам се 24 поена.
+        Максимални број поена је 240.
     </p>
-    <div class="container">
+    <div class="container border">
         <div class="row">
-            <div class="col-md-8">
-                <div class="box">
 
-                </div>
-            </div>
             <div class="col-md-4">
-                ТАБЕЛА
                 <table class="table">
                     <thead>
                         <tr>
+                            <th scope="col">#</th>
                             <th scope="col">ПОЈАМ</th>
                             <th scope="col">БОД</th>
 
@@ -96,42 +92,72 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td class="">1</td>
                             <td class="one"></td>
                             <td class="jedan"></td>
                         </tr>
                         <tr>
+                            <td class="">2</td>
                             <td class="two"></td>
                             <td class="dva"></td>
                         </tr>
                         <tr>
+                            <td class="">3</td>
                             <td class="three"></td>
                             <td class="tri"></td>
                         </tr>
                         <tr>
+                            <td class="">4</td>
                             <td class="four"></td>
                             <td class="cetri"></td>
                         </tr>
                         <tr>
+                            <td class="">5</td>
                             <td class="five"></td>
                             <td class="pet"></td>
                         </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <table class="table">
+                    <thead>
                         <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">ПОЈАМ</th>
+                            <th scope="col">БОД</th>
+
+                            <hr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="">6</td>
                             <td class="six"></td>
                             <td class="sest"></td>
                         </tr>
                         <tr>
+                            <td class="">7</td>
                             <td class="seven"></td>
                             <td class="sedam"></td>
                         </tr>
                         <tr>
+                            <td class="">8</td>
                             <td class="eight"></td>
                             <td class="osam"></td>
                         </tr>
                         <tr>
+                            <td class="">9</td>
                             <td class="nine"></td>
                             <td class="devet"></td>
                         </tr>
                         <tr>
+                            <td class="">10</td>
                             <td class="ten"></td>
                             <td class="deset"></td>
                         </tr>
@@ -145,12 +171,28 @@
             </div>
         </div>
     </div>
-
     <h2 class="text-center text-danger" id="demo"> </h2>
+    <div class="row">
 
-    <input type="text" name="try" placeholder="Тражени појам је:" class="text-center form-control mt-3 input0">
-    <button class="bg-danger form-control btn text-white m-3">ПОТВРДИ</button>
-    <button class="bg-info form-control btnPlay text-white m-3">СЛЕДЕЋИ ПОЈАМ</button>
+        <div class="col-md-4">
+            <input type="text" name="try" placeholder="Тражени појам је:" class="text-center form-control mt-3 input0">
+        </div>
+        <div class="col-md-4">
+            <button class="bg-danger form-control btnFirst text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnSecond text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnThird text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnForth text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnFifth text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnSixth text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnSeventh text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnEighth text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnNineth text-white m-3">ПОТВРДИ</button>
+            <button class="bg-danger form-control btnTenth text-white m-3">ПОТВРДИ</button>
+        </div>
+        <div class="col-md-4">
+            <button class="bg-info form-control btnPlay text-white m-3">СЛЕДЕЋИ ПОЈАМ</button>
+        </div>
+    </div>
 
     <script>
 
@@ -178,20 +220,40 @@
         var devet = document.querySelector('.devet');
         var deset = document.querySelector('.deset');
         var count = 1;
-        var check = document.querySelector('.btn');
+        // var// check = document.querySelector('.btn');
         var play = document.querySelector('.btnPlay');
         var sigma = document.querySelector('.saldo');
-        niz = []; 
+        var first = document.querySelector('.btnFirst');
+        var second = document.querySelector('.btnSecond');
+        var third = document.querySelector('.btnThird');
+        var forth = document.querySelector('.btnForth');
+        var fifth = document.querySelector('.btnFifth');
+        var sixth = document.querySelector('.btnSixth');
+        var seventh = document.querySelector('.btnSeventh');
+        var eithth = document.querySelector('.btnEighth');
+        var nineth = document.querySelector('.btnNineth');
+        var tenth = document.querySelector('.btnTenth');
+
+        var niz = [];
         console.log(niz);
-        check.disabled = true;
+        //  // check.disabled = true;
         play.disabled = true;
 
         createTable();
-       
+
 
         var boxes = document.querySelectorAll('.newDiv');
         var counter = 27;
-
+        var counter1 = 27;
+            var counter2 = 27;
+            var counter3 = 27;
+            var counter4 = 27;
+            var counter5 = 27;
+            var counter6 = 27;
+            var counter7 = 27;
+            var counter8 = 27;
+            var counter9 = 27;
+            var counter10 = 27;
         for (let i = 0; i < boxes.length; i++) {
 
             boxes[i].addEventListener('click', insertImage);
@@ -202,238 +264,336 @@
                 counter = counter - 3;
                 demo.innerHTML = counter;
                 test.focus()
-                check.disabled = false;
-         
+                //        // check.disabled = false;
+
             }
         }
         function createTable() {
-            
+
             var text = '';
             for (var i = 0; i < 24; i++) {
                 text += '<div class="newDiv"></div>'
             }
             box.innerHTML = text;
             box.style.backgroundImage = "url('plant/p" + count + ".jpg')";
-            console.log(count);
+
         }
 
-        check.addEventListener('click', validation)
-        
+        first.addEventListener('click', validation1)
 
-      function validation() {
-            check.disabled = true;
+
+        function validation1() {
+            // check.disabled = true;
             play.disabled = false;
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
-            if (count == 1) {
+            if (count === 1) {
                 jabuka1 = "JABUKA";
                 jabuka2 = "ЈАБУКА";
                 if (test === jabuka1 || test === jabuka2) {
                     one.innerHTML = "ЈАБУКА";
-                    jedan.innerHTML = counter;
+                    jedan.innerHTML = counter1;
                     jedan.style.color = "blue";
-                    var kec = counter;
-                    niz.push = (kec);
-                }else{
+
+                } else {
                     one.innerHTML = "ЈАБУКА";
                     jedan.innerHTML = -24;
                     jedan.style.color = "red";
+                    var counter1 = -24;
+                }
+                niz.push(counter1)
 
-////////////////////////////////UKOLIKO JE POGODAK + COUNTER,PROMASAJ -COUNTER FORMIRATI NOVE VARIJABLE PA IH RACUN 
-//////////////////////sabrati sve countere//////////
-}
             }
 
         }
-
-play.addEventListener('click', newPlay);
-
-function newPlay(){
-    check.disabled = false;
+        play.addEventListener('click', newPlay);
+        function newPlay() {
+            // check.disabled = false;
             play.disabled = true;
-            
-        check.disabled = true;
-        play.disabled = true;
+            var input = document.querySelector('.input0');
+            input.value = "";
+            // check.disabled = true;
+            play.disabled = true;
 
-        createTable();
-       
+            createTable();
 
-        var boxes = document.querySelectorAll('.newDiv');
-        var counter = 27;
 
-        for (let i = 0; i < boxes.length; i++) {
-
-            boxes[i].addEventListener('click', insertImage);
-
-            function insertImage() {
-                var test = document.querySelector('.input0');
-                this.style.background = "none";
-                counter = counter - 3;
-                demo.innerHTML = counter;
-                test.focus()
-                check.disabled = false;
-
-            }
-        }
-        function createTable() {
-            newCount = count + 1;
-            var text = '';
-            for (var i = 0; i < 24; i++) {
-                text += '<div class="newDiv"></div>'
-            }
-            box.innerHTML = text;
-            box.style.backgroundImage = "url('plant/p" + newCount + ".jpg')";
-        count++
-        }
-
-        check.addEventListener('click', validation)
+            var boxes = document.querySelectorAll('.newDiv');
         
 
-        function validation() {
-            check.disabled = true;
+            for (let i = 0; i < boxes.length; i++) {
+
+                boxes[i].addEventListener('click', insertImage);
+
+                function insertImage() {
+                    var test = document.querySelector('.input0');
+                    this.style.background = "none";
+                    counter1 = counter1 - 3;
+                    counter2 = counter2 - 3;
+                    counter3 = counter3 - 3;
+                    counter4 = counter4 - 3;
+                    counter5 = counter5 - 3;
+                    counter6 = counter6 - 3;
+                    counter7 = counter7 - 3;
+                    counter8= counter8 - 3;
+                    counter9 = counter9 - 3;
+                    counter10 = counter10 - 3;
+                    demo.innerHTML = counter1;
+                    demo.innerHTML = counter2;
+                    demo.innerHTML = counter3;
+                    demo.innerHTML = counter4;
+                    demo.innerHTML = counter5;
+                    demo.innerHTML = counter6;
+                    demo.innerHTML = counter7;
+                    demo.innerHTML = counter8;
+                    demo.innerHTML = counter9;
+                    demo.innerHTML = counter10;
+                    test.focus()
+                    // check.disabled = false;
+
+                }
+            }
+            function createTable() {
+                newCount = count + 1;
+                var text = '';
+                for (var i = 0; i < 24; i++) {
+                    text += '<div class="newDiv"></div>'
+                }
+                box.innerHTML = text;
+                box.style.backgroundImage = "url('plant/p" + newCount + ".jpg')";
+                count++
+            }
+        }
+        second.addEventListener('click', validation2);
+        third.addEventListener('click', validation3);
+        forth.addEventListener('click', validation4);
+        fifth.addEventListener('click', validation5);
+        sixth.addEventListener('click', validation6);
+        seventh.addEventListener('click', validation7);
+        eithth.addEventListener('click', validation8);
+        nineth.addEventListener('click', validation9);
+        tenth.addEventListener('click', validation10);
+
+
+        function validation2() {
+            // check.disabled = true;
             play.disabled = false;
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
-            
-            if (count == 2) {
+
+            if (count === 2) {
                 lubenica1 = "LUBENICA";
                 lubenica2 = "ЛУБЕНИЦА";
                 if (test == lubenica1 || test == lubenica2) {
                     two.innerHTML = "ЛУБЕНИЦА";
-                    dva.innerHTML = counter;
-                    var dvojka = counter;
-                }else{
+                    dva.innerHTML = counter2;
+
+                    dva.style.color = "blue";
+                } else {
                     two.innerHTML = "ЛУБЕНИЦА";
                     dva.innerHTML = -24;
                     dva.style.color = "red";
-                    var dvojka = -24;
+                    counter2 = -24;
                 };
-                console.log(dvojka);
+                niz.push(counter2);
+
             }
-            if (count == 3) {
+        }
+        function validation3() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 3) {
                 breskva1 = "BRESKVA";
                 breskva2 = "БРЕСКВА";
                 if (test == breskva1 || test == breskva2) {
                     three.innerHTML = "БРЕСКВА";
-                    tri.innerHTML = counter;
-                    var trojka = counter;
-                }else{
+                    tri.innerHTML = counter3;
+                    tri.style.color = "blue";
+
+                } else {
                     three.innerHTML = "БРЕСКВА";
                     tri.innerHTML = -24;
                     tri.style.color = "red";
-                    var trojka  = -24;
+                    counter3 = -24;
                 };
+                niz.push(counter3);
+
             }
-            if (count == 4) {
+
+        }
+        function validation4() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 4) {
                 paradajz1 = "PARADAJZ";
                 paradajz2 = "ПАРАДАЈЗ";
                 if (test == paradajz1 || test == paradajz2) {
-                four.innerHTML = "ПАРАДАЈЗ";
-                cetri.innerHTML = counter;
-                var cetvorka = counter;
-                }else{
+                    four.innerHTML = "ПАРАДАЈЗ";
+                    cetri.innerHTML = counter4;
+                    cetri.style.color = "blue";
+
+                } else {
                     four.innerHTML = "ПАРАДАЈЗ";
                     cetri.innerHTML = -24;
                     cetri.style.color = "red";
-                var cetvorka = -24;
+                    counter4 = -24;
                 };
+niz.push(counter4)
             }
-            if (count == 5) {
+        }
+        function validation5() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 5) {
                 kupus1 = "KUPUS";
                 kupus2 = "КУПУС";
                 if (test == kupus1 || test == kupus2) {
-                five.innerHTML = "КУПУС";
-                pet.innerHTML = counter;
-                var petica = counter;
-                
-                }else{
+                    five.innerHTML = "КУПУС";
+                    pet.innerHTML = counter;
+                    var kec = counter;
+                    pet.style.color = "blue";
+                    niz.push(kec);
+
+                } else {
                     five.innerHTML = "КУПУС";
                     pet.innerHTML = -24;
                     pet.style.color = "red";
-                var petica = -24;
+                    counter = -24;
+
                 };
             }
+        }
+        function validation6() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
 
 
-            if (count == 6) {
+            if (count === 6) {
                 malina1 = "MALINA";
                 malina2 = "МАЛИНА";
                 if (test == malina1 || test == malina2) {
-                six.innerHTML = "МАЛИНА";
-                sest.innerHTML = counter;
-                var sestica = counter;
-                }else{
+                    six.innerHTML = "МАЛИНА";
+                    sest.innerHTML = counter;
+                    var dvojka = counter;
+                    sest.style.color = "blue";
+                    niz.push(dvojka);
+                } else {
                     six.innerHTML = "МАЛИНА";
                     sest.innerHTML = -24;
                     sest.style.color = "red";
-                    var sestica = -24;
+                    counter = -24;
                 };
             }
-            if (count == 7) {
+        }
+        function validation7() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 7) {
                 orah1 = "ORAH";
                 orah2 = "ОРАХ";
                 if (test == orah1 || test == orah2) {
-                seven.innerHTML = "ОРАХ";
-                sedam.innerHTML = counter;
-                var sedmica = counter;
-                }else{
+                    seven.innerHTML = "ОРАХ";
+                    sedam.innerHTML = counter;
+                    var trojka = counter;
+                    sedam.style.color = "blue";
+                    niz.push(trojka);
+                } else {
                     seven.innerHTML = "ОРАХ";
                     sedam.innerHTML = -24;
                     sedam.style.color = "red";
-                var sedmica = -24;
+                    counter = -24;
                 };
             }
-            if (count == 8) {
+        }
+        function validation8() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 8) {
                 spanac1 = "SPANAC";
                 spanac2 = "SPANAĆ";
                 spanac3 = "СПАНАЋ";
                 if (test == spanac1 || test == spanac2 || test == spanac3) {
-                eight.innerHTML = "СПАНАЋ";
-                osam.innerHTML = counter;
-                var osmica = counter;
-                }else{
+                    eight.innerHTML = "СПАНАЋ";
+                    osam.innerHTML = counter;
+                    osam.style.color = "blue";
+                    niz.push(counter);
+
+                } else {
                     eight.innerHTML = "СПАНАЋ";
                     osam.innerHTML = -24;
                     osam.style.color = "red";
-                    var osmica = -24;
+                    counter = -24;
                 };
             }
-            if (count == 9) {
+        }
+        function validation9() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 9) {
                 dinja1 = "DINJA";
                 dinja2 = "ДИЊА";
                 if (test == dinja1 || test == dinja2) {
-                nine.innerHTML = "ДИЊА";
-                devet.innerHTML = counter;
-                var devetka = counter;
-                }else{
+                    nine.innerHTML = "ДИЊА";
+                    devet.innerHTML = counter;
+                    devet.style.color = "blue";
+                    niz.push(counter);
+
+                } else {
                     nine.innerHTML = "ДИЊА";
                     devet.innerHTML = -24;
                     devet.style.color = "red";
-                var devetka = -24;
+                    counter = -24;
                 };
             }
-            if (count == 10) {
+        }
+        function validation10() {
+            // check.disabled = true;
+            play.disabled = false;
+            var input = document.querySelector('.input0');
+            var test = input.value.toUpperCase();
+
+            if (count === 10) {
                 badem1 = "BADEM";
                 badem2 = "БАДЕМ";
                 if (test == badem1 || test == badem2) {
-                ten.innerHTML = "БАДЕМ";
-                deset.innerHTML = counter;
-                var desetka = counter;
-                }else{
+                    ten.innerHTML = "БАДЕМ";
+                    deset.innerHTML = counter;
+                    deset.style.color = "blue";
+                    niz.push(counter);
+
+                } else {
                     ten.innerHTML = "БАДЕМ";
                     deset.innerHTML = -24;
                     deset.style.color = "red";
-                    var desetka = -24;
+                    counter = -24;
                 };
+
             }
-            
-      var zbir = dvojka + trojka + cetvorka + petica +sestica + sedmica + osmica + devetka + desetka
-      console.log(zbir);
-      niz.push(zbir)
+
         }
-}
 
 
-            
+
+
     </script>
     <%- include ('../partials/footer') %>
