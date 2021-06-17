@@ -19,8 +19,19 @@ var btn6 = document.querySelector('.submit');
 var rezultat = document.querySelector('#rezultat');
 var naslov = document.querySelector('.naslov');
 var sigma = document.querySelector('.sigma');
+var control = document.querySelector('.test');
 var ocena = document.querySelector('#ocena')
 var zbir = document.querySelector("#zbir")
+   
+
+    var i = 0;
+    var j = 0;
+////////////Ovo radi
+btn6.addEventListener('click', testiranje1);
+function testiranje1(){
+    sessionStorage.setItem("testPravi", i);
+    i++
+}
 
 var sum = [];
 
