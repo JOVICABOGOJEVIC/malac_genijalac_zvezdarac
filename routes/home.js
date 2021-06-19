@@ -21,7 +21,7 @@ router.post('/login',(req,res) =>{
         phone : req.body.senderPhone,
         call:true
     },(err,data) =>{
-        res.redirect('/')
+        res.redirect('/kontakt')
     });
 });
 router.get('/delete/:id', (req,res) =>{
