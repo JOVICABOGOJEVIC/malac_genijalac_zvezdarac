@@ -9,6 +9,6 @@ app.set("view engine","ejs")
 app.use(express.urlencoded({extended:false}));
 app.use('/',routes)
 
-app.listen(80, (req,res) =>{
+app.listen(81, (req,res) =>{
     console.log('Listening on port 3000');
 })
