@@ -1,0 +1,44 @@
+<%- include ('../partials/top') %>
+
+<div class="container">
+    <a href="/" class="btn btn-md btn-success">NASLOVNA</a>
+    <h2 class="text-center text-danger border">APLIKACIJA</h2 class="text-align:center;">
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <h3> Lista interesanata</h3>
+            <div class="row">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ime i prezime:</th>
+                                <th>Mejl:</th>
+                                <th>Telefon:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i = 0; i<data.length; i++){ %>
+                                <tr>
+                                    <td> <%= i+1 %> </td>
+                                    <td> <%= data[i].name %> </td>
+                                    <td> <%= data[i].mail %> </td>
+                                    <td> <%= data[i].phone %> </td>
+                                    <td>
+                                        <a href="/delete/<%= data[i]._id %> " class="btn btn-md btn-danger"> 
+                                            OBRISATI
+                                        </a>
+                                    </td>
+                                   
+                                </tr>
+                            
+                            <% } %>
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+<%- include ('../partials/footer') %>

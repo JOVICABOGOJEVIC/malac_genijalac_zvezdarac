@@ -9,35 +9,24 @@
 Thank you for your interest
 </div>
 <!-- Forma -->
-<form action="_send-email.php" method="post" id="contact-form">
+<form action="/login" method="post" id="contact-form">
  <div class="form-group">
      <label for="SenderName">Ime i prezime</label>
-     <input type="text" name="SenderName" class="form-control" id="SenderName" required>
+     <input type="text" name="senderName" class="form-control" id="SenderName" required>
  </div>
  <div class="form-group">
      <label for="SenderEmail">E-mail</label>
-     <input type="email" name="SenderEmail" class="form-control" id="SenderEmail" required>
+     <input type="email" name="senderEmail" class="form-control" id="SenderEmail" required>
  </div>
 
- <!--
-  Dodatna polja imaju drugačiju vrednost za name atribut.
-  Mora da sadrži Sender[] gde se unutar uglastih zagrada upisuje jedinstveni key.
-  Taj key će biti iskorišćen u telu poruke.
-  Ukoliko key sadrži dve ili više reči - koristiti donju crtu između.
-  -->
  <div class="form-group">
      <label for="SenderPhone">Telefon</label>
-     <input type="text" name="Sender[Broj_telefona]" class="form-control" id="SenderPhone" required>
+     <input type="text" name="senderPhone" class="form-control" id="SenderPhone" required>
  </div>
 
- <div class="form-group">
-     <label for="SenderMessage">Poruka</label>
-     <textarea name="SenderMessage" id="SenderMessage" class="form-control text-danger" required>
-         Kontakt forma je u pripremi
-     </textarea>
- </div>
- <a href="#" style="background:#3366cc; color: aliceblue;" class="btn disabled form-control">Pošalji</a>
+ <button style="background:#3366cc; color: aliceblue;" class="btn form-control">Pošalji</button>
 </form>
+
 </div>
 <div class="follow">
     <h1>UPIS JE U TOKU !!</h1>

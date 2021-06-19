@@ -262,9 +262,12 @@ height: auto;
     color: white;
     text-align: center;
   }
-  .card-body{
-
+  .called{
+display: none;
   }
   .card-footer{
     color: darkblue;
+  }
+  th{
+    text-align: center;
   }
