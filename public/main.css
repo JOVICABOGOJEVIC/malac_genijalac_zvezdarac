@@ -234,6 +234,9 @@ height: auto;
     width: 100%;
     
   }
+  .speak{
+    padding: 3%;
+  }
   .box2{
     background-color: rgb(217, 245, 243);
 

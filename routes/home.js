@@ -48,6 +48,9 @@ router.get('/igrica', (req,res) =>{
 router.get('/mentalna_aritmetika', (req,res) =>{
     res.render("home/mentalna_aritmetika");
 });
+router.get('/superum', (req,res) =>{
+    res.render("home/superum");
+});
 
 router.use('/',require('./games'))
 

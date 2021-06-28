@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malac Genijalac Zvezdara | Škola mentalne aritmetike za decu | Abakus</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1B35DRKRMR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1B35DRKRMR');
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="games.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        .niz{
+            border:1px solid black;
+            box-shadow: 0 0 4px;
+            padding: 5px;
+            height:300px;
+        }
+      h3{
+          color:green;
+          border:1px solid green;
+          padding:5px;
+      }
+      h4{
+          color:red;
+          border:1px solid red;
+          padding:5px;
+      }
+      .score{
+          border:1px solid green;
+          color:green; 
+        text-align: center;
+      }
+        </style>
+</head>
+<body>
+    
+<div class="container">
+<a href="/" class="text-center btn btn-success">НАСЛОВНА</a>
+    <h2 class="text-center m-3">НАСТАВИ НИЗ</h2>
+    <div class="row">
+    <div class="col-md-3 niz arr1">
+       <p class="text-center display-4">13 = 16 </p> 
+       <p class="text-center display-4">25 = 210 </p> 
+       <p class="text-center display-4">66 = 612 </p> 
+       <p class="text-center display-4">82 = 
+           <input id="resenje1" style="width: 80px;" type="text"> </p> 
+           <div style="position: absolute; bottom:5px;"> 
+            <button class="btn btn-sm btn-info text-center one" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score1"> </p>
+    </div> 
+    <div class="col-md-3 niz arr2">
+        <p class="text-center display-4">1 , 1 , 2 , 3 , 5 , 8 , 13 , 21</p> 
+     
+        <p class="text-center display-4">
+            <input id="resenje2"  style="width: 80px;" type="text"> </p> 
+            <div style="position: absolute; bottom:5px;"> 
+                <button class="btn btn-sm btn-info text-center two" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score2"> </p>
+       </div>
+    
+    <div class="col-md-3 niz arr3">
+        <p class="text-center display-4">5247 </p> 
+        <p class="text-center display-4">3178 </p> 
+        <p class="text-center display-4">2131</p> 
+        <p class="text-center display-4">
+             <input  id="resenje3" style="width: 80px;" type="text"> 
+             
+          </p>  
+          <div style="position: absolute; bottom:5px;"> 
+            <button class="btn btn-sm btn-info text-center three" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+            <p class = "score3"> </p>
+        </div>
+
+    <div class="col-md-3 niz arr4">
+        <p class="text-center display-4">1 , 4 , 9 , 16 , 25 </p> 
+     
+        <p class="text-center display-4">
+             <input  id="resenje4"  style="width: 80px;" type="text"> 
+          </p>  
+        <div style="position: absolute; bottom:5px;"> 
+             <button class="btn btn-sm btn-info text-center four" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+             <p class = "score1"> </p>
+            </div>
+    </div>
+</div>
+<div class="container">
+
+        <div class="row">
+        <div class="col-md-3 niz arr5">
+           <p class="text-center display-4">1 , 2 , 5 , 10 , 17 , 26 , 37 ,50  </p> 
+          
+           <p class="text-center display-4">
+   
+               <input id="resenje5" style="width: 80px;" type="text"> </p> 
+               <div style="position: absolute; bottom:5px;"> 
+                <button class="btn btn-sm btn-info text-center five" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score5"> </p>
+        </div> 
+        <div class="col-md-3 niz arr6">
+            <p class="text-center display-4">2 , 4 , 8 , 15 , 32 , 64 , 128  </p> 
+         
+            <p class="text-center display-4">
+                <input id="resenje6"  style="width: 80px;" type="text"> </p> 
+                <div style="position: absolute; bottom:5px;"> 
+                    <button class="btn btn-sm btn-info text-center six" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score6"> </p>
+</div>
+        
+        <div class="col-md-3 niz arr7">
+            <p class="text-center display-4"> 1 , 2 , 11 , 13 , 21 , 24 , 31   </p> 
+            <p class="text-center display-4">
+                 <input  id="resenje7" style="width: 80px;" type="text">             
+              </p>  
+              <div style="position: absolute; bottom:5px;"> 
+                <button class="btn btn-sm btn-info text-center seven" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score7"> </p>
+</div>
+    
+        <div class="col-md-3 niz arr8">
+            <p class="text-center display-4"> 1 , 2 , 2 , 4 , 8 , 32 </p> 
+         
+            <p class="text-center display-4">
+                 <input  id="resenje8"  style="width: 80px;" type="text"> 
+              </p>  
+            <div style="position: absolute; bottom:5px;"> 
+                 <button class="btn btn-sm btn-info text-center eight" style="margin-bottom: 0px;">ПОТВРДИ</button></div>
+   <p class = "score8"> </p>
+</div>
+        </div>
+        <button class="total btn form-control btn-danger m-2">Израчунај</button>
+        <p class = "score"></p>
+    </div>
+<script>
+    var sol1 = document.querySelector('#resenje1');
+    var sol2 = document.querySelector('#resenje2');
+    var sol3 = document.querySelector('#resenje3');
+    var sol4 = document.querySelector('#resenje4');
+    var sol5 = document.querySelector('#resenje5');
+    var sol6 = document.querySelector('#resenje6');
+    var sol7 = document.querySelector('#resenje7');
+    var sol8 = document.querySelector('#resenje8');
+    var btn1 = document.querySelector('.one');
+    var btn2 = document.querySelector('.two');
+    var btn3 = document.querySelector('.three');
+    var btn4 = document.querySelector('.four');
+    var btn5 = document.querySelector('.five');
+    var btn6 = document.querySelector('.six');
+    var btn7 = document.querySelector('.seven');
+    var btn8 = document.querySelector('.eight');
+    var btnTotal = document.querySelector('.total');
+    var arr1 = document.querySelector('.arr1');
+    var arr2 = document.querySelector('.arr2');
+    var arr3 = document.querySelector('.arr3');
+    var arr4 = document.querySelector('.arr4');
+    var arr5 = document.querySelector('.arr5');
+    var arr6 = document.querySelector('.arr6');
+    var arr7 = document.querySelector('.arr7');
+    var arr8 = document.querySelector('.arr8');
+    var score1 = document.querySelector('.score1');
+    var score2 = document.querySelector('.score2');
+    var score3 = document.querySelector('.score3');
+    var score4 = document.querySelector('.score4');
+    var score5 = document.querySelector('.score5');
+    var score6 = document.querySelector('.score6');
+    var score7 = document.querySelector('.score7');
+    var score = document.querySelector('.score');
+    
+btn1.addEventListener('click', check1)
+btn2.addEventListener('click', check2)
+btn3.addEventListener('click', check3)
+btn4.addEventListener('click', check4)
+btn5.addEventListener('click', check5)
+btn6.addEventListener('click', check6)
+btn7.addEventListener('click', check7)
+btn8.addEventListener('click', check8)
+btnTotal.addEventListener('click', total)
+
+function total(){
+    var ukupno = skup.reduce(function (acc, val) { return acc + val; }, 0)
+console.log("Radi");
+score.innerHTML = `Од максималних 240 поена освојили сте    ${ukupno} поена`;
+console.log(ukupno);
+}
+skup = [];
+
+console.log(skup);
+
+function check1(){
+var solve1 = sol1.value;
+ if(solve1 == "84"){
+    count = 30;
+      skup.push(count)
+    arr1.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна. <br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr1.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Прва цифра се преписује док се друга множи бројем 2, што даје број 84.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+function check2(){
+var solve2 = sol2.value;
+ if(solve2 == "34"){
+    count = 30;
+      skup.push(count)
+    arr2.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr2.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Збир два суседна броја даје следећи број у низу.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+} 
+function check3(){
+var solve3 = sol3.value;
+ if(solve3 == "1047"){
+    count = 30;
+      skup.push(count)
+    arr3.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr3.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Разлика између већег и мањег броја на истој индексној позицији даје нови број.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+function check4(){
+var solve4 = sol4.value;
+ if(solve4 == "36"){
+    count = 30;
+      skup.push(count)
+    arr4.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr4.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Редом су квадрирани бројеви почев од 1, следећи број је 6, што даје 36.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+
+
+function check5(){
+var solve5 = sol5.value;
+ if(solve5 == "65"){
+    count = 30;
+      skup.push(count)
+    arr5.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr5.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Сваки наредни број је увећан следећим непарним бројем.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+function check6(){
+var solve6 = sol6.value;
+ if(solve6 == "255"){
+    count = 30;
+      skup.push(count)
+    arr6.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr6.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Сваки наредни број је увећан за предходну вредност , а притом је четврти у низу умањен за 1.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+function check7(){
+var solve7 = sol7.value;
+ if(solve7 == "35"){
+    count = 30;
+      skup.push(count)
+    arr7.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr7.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Други број у наредној десетици је увећан за 1.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+function check8(){
+var solve8 = sol8.value;
+ if(solve8 == "256"){
+    count = 30;
+      skup.push(count)
+    arr8.innerHTML = "<h3><i class='fas fa-check-double' style='font-size:24px'></i> <br><br>Унета вредност је тачна.<br> <br> <br>Освојили сте 30 поена.</h3>" 
+ }else{
+    arr8.innerHTML = "<h4><br><i class='fas fa-times' style='font-size:24px'></i> <br> <br>Proizvod dva susedna broja daje vrednost sledećeg broja u nizu.<br> <br> <br>Освојили сте -30 поена.</h4>" 
+    count = -30;
+      skup.push(count)
+ }   
+}
+</script>
+<%- include ('../partials/footer') %>
