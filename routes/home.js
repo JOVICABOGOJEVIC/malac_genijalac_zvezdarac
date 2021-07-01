@@ -51,6 +51,9 @@ router.get('/mentalna_aritmetika', (req,res) =>{
 router.get('/superum', (req,res) =>{
     res.render("home/superum");
 });
+router.get('/ads.txt', (req,res) =>{
+    res.render("ads.txt");
+});
 
 router.use('/',require('./games'))
 
