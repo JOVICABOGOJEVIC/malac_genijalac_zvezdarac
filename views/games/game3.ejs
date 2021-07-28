@@ -179,15 +179,6 @@
         </div>
         <div class="col-md-4">
             <button class="bg-danger form-control btnFirst text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnSecond text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnThird text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnForth text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnFifth text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnSixth text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnSeventh text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnEighth text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnNineth text-white m-3">ПОТВРДИ</button>
-            <button class="bg-danger form-control btnTenth text-white m-3">ПОТВРДИ</button>
         </div>
         <div class="col-md-4">
             <button class="bg-info form-control btnPlay text-white m-3">СЛЕДЕЋИ ПОЈАМ</button>
@@ -224,16 +215,7 @@
         var play = document.querySelector('.btnPlay');
         var sigma = document.querySelector('.saldo');
         var first = document.querySelector('.btnFirst');
-        var second = document.querySelector('.btnSecond');
-        var third = document.querySelector('.btnThird');
-        var forth = document.querySelector('.btnForth');
-        var fifth = document.querySelector('.btnFifth');
-        var sixth = document.querySelector('.btnSixth');
-        var seventh = document.querySelector('.btnSeventh');
-        var eithth = document.querySelector('.btnEighth');
-        var nineth = document.querySelector('.btnNineth');
-        var tenth = document.querySelector('.btnTenth');
-
+       
         var niz = [];
         console.log(niz);
         //  // check.disabled = true;
@@ -278,8 +260,15 @@
             box.style.backgroundImage = "url('plant/p" + count + ".jpg')";
 
         }
+var n = 0;
 
-        first.addEventListener('click', validation1)
+var validation = (function(n) {
+  return function() {
+    n += 1;
+    return n;
+  }
+}(0))
+//        first.addEventListener('click', validation1);
 
 
         function validation1() {
@@ -287,23 +276,18 @@
             play.disabled = false;
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
-            if (count === 1) {
-                jabuka1 = "JABUKA";
-                jabuka2 = "ЈАБУКА";
-                if (test === jabuka1 || test === jabuka2) {
-                    one.innerHTML = "ЈАБУКА";
-                    jedan.innerHTML = counter1;
-                    jedan.style.color = "blue";
-
-                } else {
-                    one.innerHTML = "ЈАБУКА";
-                    jedan.innerHTML = -24;
-                    jedan.style.color = "red";
-                    var counter1 = -24;
-                }
-                niz.push(counter1)
-
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+    case "ЈАБУКА":
+    console.log("RAdiRadi");
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
 
         }
         play.addEventListener('click', newPlay);
@@ -364,15 +348,7 @@
                 count++
             }
         }
-        second.addEventListener('click', validation2);
-        third.addEventListener('click', validation3);
-        forth.addEventListener('click', validation4);
-        fifth.addEventListener('click', validation5);
-        sixth.addEventListener('click', validation6);
-        seventh.addEventListener('click', validation7);
-        eithth.addEventListener('click', validation8);
-        nineth.addEventListener('click', validation9);
-        tenth.addEventListener('click', validation10);
+ 
 
 
         function validation2() {
@@ -380,24 +356,16 @@
             play.disabled = false;
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
-
-            if (count === 2) {
-                lubenica1 = "LUBENICA";
-                lubenica2 = "ЛУБЕНИЦА";
-                if (test == lubenica1 || test == lubenica2) {
-                    two.innerHTML = "ЛУБЕНИЦА";
-                    dva.innerHTML = counter2;
-
-                    dva.style.color = "blue";
-                } else {
-                    two.innerHTML = "ЛУБЕНИЦА";
-                    dva.innerHTML = -24;
-                    dva.style.color = "red";
-                    counter2 = -24;
-                };
-                niz.push(counter2);
-
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
+          
         }
         function validation3() {
             // check.disabled = true;
@@ -405,23 +373,15 @@
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 3) {
-                breskva1 = "BRESKVA";
-                breskva2 = "БРЕСКВА";
-                if (test == breskva1 || test == breskva2) {
-                    three.innerHTML = "БРЕСКВА";
-                    tri.innerHTML = counter3;
-                    tri.style.color = "blue";
-
-                } else {
-                    three.innerHTML = "БРЕСКВА";
-                    tri.innerHTML = -24;
-                    tri.style.color = "red";
-                    counter3 = -24;
-                };
-                niz.push(counter3);
-
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
 
         }
         function validation4() {
@@ -430,22 +390,15 @@
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 4) {
-                paradajz1 = "PARADAJZ";
-                paradajz2 = "ПАРАДАЈЗ";
-                if (test == paradajz1 || test == paradajz2) {
-                    four.innerHTML = "ПАРАДАЈЗ";
-                    cetri.innerHTML = counter4;
-                    cetri.style.color = "blue";
-
-                } else {
-                    four.innerHTML = "ПАРАДАЈЗ";
-                    cetri.innerHTML = -24;
-                    cetri.style.color = "red";
-                    counter4 = -24;
-                };
-niz.push(counter4)
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation5() {
             // check.disabled = true;
@@ -453,24 +406,15 @@ niz.push(counter4)
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 5) {
-                kupus1 = "KUPUS";
-                kupus2 = "КУПУС";
-                if (test == kupus1 || test == kupus2) {
-                    five.innerHTML = "КУПУС";
-                    pet.innerHTML = counter;
-                    var kec = counter;
-                    pet.style.color = "blue";
-                    niz.push(kec);
-
-                } else {
-                    five.innerHTML = "КУПУС";
-                    pet.innerHTML = -24;
-                    pet.style.color = "red";
-                    counter = -24;
-
-                };
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation6() {
             // check.disabled = true;
@@ -479,22 +423,15 @@ niz.push(counter4)
             var test = input.value.toUpperCase();
 
 
-            if (count === 6) {
-                malina1 = "MALINA";
-                malina2 = "МАЛИНА";
-                if (test == malina1 || test == malina2) {
-                    six.innerHTML = "МАЛИНА";
-                    sest.innerHTML = counter;
-                    var dvojka = counter;
-                    sest.style.color = "blue";
-                    niz.push(dvojka);
-                } else {
-                    six.innerHTML = "МАЛИНА";
-                    sest.innerHTML = -24;
-                    sest.style.color = "red";
-                    counter = -24;
-                };
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation7() {
             // check.disabled = true;
@@ -502,22 +439,15 @@ niz.push(counter4)
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 7) {
-                orah1 = "ORAH";
-                orah2 = "ОРАХ";
-                if (test == orah1 || test == orah2) {
-                    seven.innerHTML = "ОРАХ";
-                    sedam.innerHTML = counter;
-                    var trojka = counter;
-                    sedam.style.color = "blue";
-                    niz.push(trojka);
-                } else {
-                    seven.innerHTML = "ОРАХ";
-                    sedam.innerHTML = -24;
-                    sedam.style.color = "red";
-                    counter = -24;
-                };
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation8() {
             // check.disabled = true;
@@ -525,23 +455,15 @@ niz.push(counter4)
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 8) {
-                spanac1 = "SPANAC";
-                spanac2 = "SPANAĆ";
-                spanac3 = "СПАНАЋ";
-                if (test == spanac1 || test == spanac2 || test == spanac3) {
-                    eight.innerHTML = "СПАНАЋ";
-                    osam.innerHTML = counter;
-                    osam.style.color = "blue";
-                    niz.push(counter);
-
-                } else {
-                    eight.innerHTML = "СПАНАЋ";
-                    osam.innerHTML = -24;
-                    osam.style.color = "red";
-                    counter = -24;
-                };
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation9() {
             // check.disabled = true;
@@ -549,22 +471,15 @@ niz.push(counter4)
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 9) {
-                dinja1 = "DINJA";
-                dinja2 = "ДИЊА";
-                if (test == dinja1 || test == dinja2) {
-                    nine.innerHTML = "ДИЊА";
-                    devet.innerHTML = counter;
-                    devet.style.color = "blue";
-                    niz.push(counter);
-
-                } else {
-                    nine.innerHTML = "ДИЊА";
-                    devet.innerHTML = -24;
-                    devet.style.color = "red";
-                    counter = -24;
-                };
-            }
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
         function validation10() {
             // check.disabled = true;
@@ -572,24 +487,15 @@ niz.push(counter4)
             var input = document.querySelector('.input0');
             var test = input.value.toUpperCase();
 
-            if (count === 10) {
-                badem1 = "BADEM";
-                badem2 = "БАДЕМ";
-                if (test == badem1 || test == badem2) {
-                    ten.innerHTML = "БАДЕМ";
-                    deset.innerHTML = counter;
-                    deset.style.color = "blue";
-                    niz.push(counter);
-
-                } else {
-                    ten.innerHTML = "БАДЕМ";
-                    deset.innerHTML = -24;
-                    deset.style.color = "red";
-                    counter = -24;
-                };
-
-            }
-
+            switch(test) {
+  case "JABUKA":
+      console.log("Radi");
+    // code block
+    break;
+  default:
+      console.log('Ne radi');
+    // code block
+}
         }
 
 

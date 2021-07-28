@@ -13,4 +13,8 @@ router.get('/game4', (req,res) =>{
     res.render("games/game4");
 });
 
+router.get('/game5', (req,res) =>{
+    res.render("games/game5");
+});
+
 module.exports = router;
