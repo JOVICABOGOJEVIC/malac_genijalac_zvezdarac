@@ -234,8 +234,15 @@ height: auto;
     width: 100%;
     
   }
+  .tema{
+    border:1px solid black;
+    padding: 1%;
+  }
   .speak{
     padding: 3%;
+  }
+  a:hover {
+    color: red;
   }
   .box2{
     background-color: rgb(217, 245, 243);

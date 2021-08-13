@@ -36,8 +36,8 @@ router.get('/o_nama', (req,res) =>{
 router.get('/lokacije', (req,res) =>{
     res.render("home/lokacije");
 });
-router.get('/priprema', (req,res) =>{
-    res.render("home/priprema");
+router.get('/abakus', (req,res) =>{
+    res.render("home/abakus");
 });
 router.get('/upis', (req,res) =>{
     res.render("home/upis");
@@ -51,6 +51,10 @@ router.get('/mentalna_aritmetika', (req,res) =>{
 router.get('/superum', (req,res) =>{
     res.render("home/superum");
 });
+router.get('/numicon', (req,res) =>{
+    res.render("home/numicon");
+});
+
 
 
 router.use('/',require('./games'))
